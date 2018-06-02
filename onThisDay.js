@@ -6,7 +6,7 @@ document.getElementById("formm").addEventListener("submit", function(){
         var date = moment().add(i, 'years');
         var date2 = moment().add(i, 'years').add(+1,'days');
        
-        var q = "@"+  document.getElementById("handle").value +" "
+        var q = "from:@"+  document.getElementById("handle").value +" "
        
         while (year > 2007) {
            q += "(since:"+date.format("YYYY-MM-DD")+" AND until:"+date2.format("YYYY-MM-DD")+") OR ";
